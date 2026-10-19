@@ -44,6 +44,20 @@ li::marker{color:var(--yellow)}
 strong{font-weight:600}
 footer{border-top:1px solid var(--line)}
 footer .bar{font-size:14px;flex-wrap:wrap}
+@media print{
+  :root{--line:#ccc;--panel:#fff}
+  body{background:#fff;color:#000;font-size:11pt;line-height:1.55}
+  header,footer{border-color:#ccc}
+  .logo .cls-1{fill:#000}
+  a{color:#000}
+  .pill{display:none}
+  .tag{color:#000;border-color:#000}
+  .summary{border-left-color:#000}
+  nav.toc h2,h2 .n{color:#000}
+  li::marker{color:#000}
+  section{break-inside:auto}
+  h2{break-after:avoid}
+}
 </style>
 </head>
 <body>
